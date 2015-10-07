@@ -1,0 +1,167 @@
+/*
+  author: Osvaldo Cobacho Aguilera
+  email:ocobacho@gmx.com
+*/
+
+body{
+   padding: 0;
+   margin: 0;
+   overflow: none;
+}
+#container{      
+   background: #666 url(background.jpg) no-repeat;
+   width: 100%;
+   height: 100%;      
+   position: relative;
+   padding: 0;   
+} 
+
+@-moz-keyframes drop{
+   from {top: -20px;}
+   to {top: 700px; }
+}
+@-webkit-keyframes drop{
+   from {top: -20px;}
+   to {top: 700px; }
+}      
+@-moz-keyframes bill{
+    0% { -moz-transform: rotate(-180deg) translate(0px, 0px) rotateX(-360deg) rotateY(-180deg); border-bottom-left-radius: 0px; border-top-left-radius: 0px;}
+    10% { border-bottom-right-radius: 0px; border-top-right-radius: 3px;}
+    15% { border-bottom-right-radius: 35px; border-bottom-left-radius: 0px; border-top-right-radius: 60px;}
+    50% { -moz-transform: rotate(180deg) translate(10px, 95px) rotateX(180deg) rotateY(180deg); border-bottom-left-radius: 50px;}
+    60% { border-top-left-radius: 60px; border-top-right-radius: 3px;}
+    70% { border-top-left-radius: 10px;}
+}
+
+@-webkit-keyframes bill{
+    0% { -webkit-transform: rotate(-180deg) translate(0px, 0px) rotateX(-360deg) rotateY(-180deg); border-bottom-left-radius: 0px; border-top-left-radius: 0px;}
+    10% { border-bottom-right-radius: 0px; border-top-right-radius: 3px;}
+    15% { border-bottom-right-radius: 35px; border-bottom-left-radius: 0px; border-top-right-radius: 60px;}
+    50% { -webkit-transform: rotate(180deg) translate(10px, 95px) rotateX(180deg) rotateY(180deg); border-bottom-left-radius: 50px;}
+    60% { border-top-left-radius: 60px; border-top-right-radius: 3px;}
+    70% { border-top-left-radius: 10px;}
+} 
+@-moz-keyframes flip{
+    0% { -moz-transform: rotateX(-180deg);}
+    100% { -moz-transform: rotateX(180deg);}
+}
+
+#money div {
+   position: absolute;
+   top: -40px;
+   -moz-animation-name: drop, bill;
+   -moz-animation-iteration-count: infinite; 
+   -moz-animation-direction: normal; 
+   -moz-animation-timing-function: ease-in;
+   -webkit-animation-name: drop, bill;
+   -webkit-animation-iteration-count: infinite; 
+   -webkit-animation-direction: normal; 
+   -webkit-animation-timing-function: ease-in;
+}
+.bill {
+   background-image:url(100dollarok.jpg);
+   background-size: contain;
+   height: 21px;
+   width: 51px;
+   position: absolute;   
+}
+.bill.b1{
+   left: 40px;
+   -moz-animation-duration: 12s;   
+   -webkit-animation-duration: 12s;   
+}
+.bill.b2{
+   font-size: 1.8em;
+   left: 120px;
+   -moz-animation-duration: 7s;   
+   -webkit-animation-duration: 7s;   
+}
+.bill.b3{
+   left: 200px;
+   -moz-animation-duration: 11s;   
+}
+.bill.b4{
+   left: 280px;
+   -moz-animation-duration: 13s;   
+} 
+.bill.b5{
+   left: 380px;
+   -moz-animation-duration: 8s;   
+   -webkit-animation-duration: 8s;   
+} 
+
+.bill.b6{
+   left: 480px;
+   -moz-animation-duration: 6s;
+   -webkit-animation-duration: 6s;   
+}
+.bill.b7{
+   left: 580px;
+   -moz-animation-duration: 12s;   
+   -webkit-animation-duration: 12s;   
+}
+.bill.b8{
+   left: 680px;
+   -moz-animation-duration: 5s;   
+   -webkit-animation-duration: 5s;   
+} 
+
+.bill.b9{
+   left: 700px;
+   -moz-animation-duration: 11s;   
+   -webkit-animation-duration: 11s;   
+} 
+
+.bill.b10{
+   left: 720px;
+   -moz-animation-duration: 7s;   
+   -webkit-animation-duration: 7s;   
+}
+.bill.b11{
+   left: 740px;
+   -moz-animation-duration: 15s;   
+   -webkit-animation-duration: 15s;   
+}
+.bill.b12{
+   left: 750px;
+   -moz-animation-duration: 12s;   
+   -webkit-animation-duration: 12s;   
+}
+
+.bill.b13{
+   left: 800px;
+   -moz-animation-duration: 6s;   
+   -webkit-animation-duration: 6s;   
+}
+.bill.b14{
+   left: 840px;
+   -moz-animation-duration: 12s;   
+   -webkit-animation-duration: 12s;   
+}
+.bill.b15{
+   left: 980px;
+   -moz-animation-duration: 5s;   
+   -webkit-animation-duration: 5s;   
+} 
+
+.bill.b16{
+   left: 1000px;
+   -moz-animation-duration: 11s;   
+   -webkit-animation-duration: 11s;   
+} 
+
+.bill.b17{
+   left: 1020px;
+   -moz-animation-duration: 7s;   
+   -webkit-animation-duration: 7s;   
+}
+.bill.b18{
+   left: 1040px;
+   -moz-animation-duration: 15s;   
+   -webkit-animation-duration: 15s;   
+}
+.bill.b19{
+   left: 1080px;
+   -moz-animation-duration: 22s;   
+   -webkit-animation-duration: 22s;   
+}
