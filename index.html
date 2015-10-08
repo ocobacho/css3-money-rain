@@ -7,6 +7,7 @@
 
 <body>
 <div id="container">
+  <button id="more-money" class="btn">More money!</button>
 	<div id="money">  
 	   <div class="bill b1"></div> 
 	   <div class="bill b2"></div> 
@@ -29,6 +30,21 @@
 	   <div class="bill b19"></div>
 	</div> 
 </div>
+<script type="text/javascript">
+var moreMoneybtn = document.getElementById('more-money');
+moreMoneybtn.onclick = moreMoney;
+function moreMoney () {
+    var money = document.getElementById('money')
+    setInterval(function(){
+        var bill = document.createElement("div");
+        var x = Math.floor((Math.random() * 19) + 1);
+        bill.className = "bill b"+x;
+        console.log(x);
+        money.appendChild(bill);
+        bill.width ="150%";
+  }, 100 );
+}
+</script>
 </body>
 </html> 
  

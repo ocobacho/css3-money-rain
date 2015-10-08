@@ -28,7 +28,7 @@ body{
     0% { -moz-transform: rotate(-180deg) translate(0px, 0px) rotateX(-360deg) rotateY(-180deg); border-bottom-left-radius: 0px; border-top-left-radius: 0px;}
     10% { border-bottom-right-radius: 0px; border-top-right-radius: 3px;}
     15% { border-bottom-right-radius: 35px; border-bottom-left-radius: 0px; border-top-right-radius: 60px;}
-    50% { -moz-transform: rotate(180deg) translate(10px, 95px) rotateX(180deg) rotateY(180deg); border-bottom-left-radius: 50px;}
+    70% { -moz-transform: rotate(100deg) translate(10px, 95px) rotateX(180deg) rotateY(180deg); border-bottom-left-radius: 50px;}
     60% { border-top-left-radius: 60px; border-top-right-radius: 3px;}
     70% { border-top-left-radius: 10px;}
 }
@@ -37,7 +37,7 @@ body{
     0% { -webkit-transform: rotate(-180deg) translate(0px, 0px) rotateX(-360deg) rotateY(-180deg); border-bottom-left-radius: 0px; border-top-left-radius: 0px;}
     10% { border-bottom-right-radius: 0px; border-top-right-radius: 3px;}
     15% { border-bottom-right-radius: 35px; border-bottom-left-radius: 0px; border-top-right-radius: 60px;}
-    50% { -webkit-transform: rotate(180deg) translate(10px, 95px) rotateX(180deg) rotateY(180deg); border-bottom-left-radius: 50px;}
+    70% { -webkit-transform: rotate(100deg) translate(10px, 95px) rotateX(180deg) rotateY(180deg); border-bottom-left-radius: 50px;}
     60% { border-top-left-radius: 60px; border-top-right-radius: 3px;}
     70% { border-top-left-radius: 10px;}
 } 
@@ -56,7 +56,7 @@ body{
    -webkit-animation-name: drop, bill;
    -webkit-animation-iteration-count: infinite; 
    -webkit-animation-direction: normal; 
-   -webkit-animation-timing-function: ease-in;
+   -webkit-animation-timing-function: 2s;
 }
 .bill {
    background-image:url(100dollarok.jpg);
@@ -119,8 +119,8 @@ body{
 }
 .bill.b11{
    left: 740px;
-   -moz-animation-duration: 15s;   
-   -webkit-animation-duration: 15s;   
+   -moz-animation-duration: 10s;   
+   -webkit-animation-duration: 10s;   
 }
 .bill.b12{
    left: 750px;
@@ -157,11 +157,23 @@ body{
 }
 .bill.b18{
    left: 1040px;
-   -moz-animation-duration: 15s;   
-   -webkit-animation-duration: 15s;   
+   -moz-animation-duration: 11s;   
+   -webkit-animation-duration: 11s;   
 }
 .bill.b19{
    left: 1080px;
-   -moz-animation-duration: 22s;   
-   -webkit-animation-duration: 22s;   
+   -moz-animation-duration: 9s;   
+   -webkit-animation-duration: 9s;   
+}
+
+.btn {
+  background-color: #03A9F4;
+  border: 1px solid #B3E5FC;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  margin: 1%;
+}
+.btn:hover {
+  cursor: cell;
 }
